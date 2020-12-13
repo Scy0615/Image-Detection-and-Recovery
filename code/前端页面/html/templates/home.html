@@ -1,0 +1,42 @@
+<!-- templates/home.html -->
+
+<DOCTYPE html>
+<html lang="zh-han">
+    <head>
+        <title>主页</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+    </head>
+    <body>
+        {% if username %}
+            <div class="header">
+                <div class="nav">
+                    <img src="../static/image/label.png"/>
+                    <button class="btn2" ><a href="{{ url_for('panel') }}">个人中心</a></button>
+                    <button class="btn"><a href="{{ url_for('login') }}">登录</a></button>
+                    <a class="index" href="{{ url_for('compare') }}">首页</a>
+                </div>
+            </div>
+            <!--<p>{{username}}，欢迎来到主页！ </p>-->
+            <div class="body">
+
+            </div>
+        {% else %}
+            <!--<p>欢迎来到主页！</p>-->
+            <div class="header">
+                <div class="nav">
+                    <img src="../static/image/label.png"/>
+                    <button class="btn" ><a href="{{ url_for('regist') }}">注册</a></button>
+                    <button class="btn"><a href="{{ url_for('login') }}">登录</a></button>
+                    <a class="index">首页</a>
+                </div>
+            </div>
+            <div class="body">
+                <div class="textborder">
+
+                </div>
+            </div>
+        {% endif %}
+    </body>
+</html>

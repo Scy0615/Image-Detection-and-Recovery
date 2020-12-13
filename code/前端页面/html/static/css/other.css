@@ -1,0 +1,69 @@
+.login{
+	width: 100%;
+	height: 600px;
+	background-color:rgba(222,145,25,0.25);
+	padding-top:15px;
+}
+.login p{
+	margin-left: 130px;
+	margin-bottom: 45px;
+	font-weight: bolder;
+	font-size: 24px;
+}
+.login form{
+	width: 350px;
+	height: 300px;
+	border-radius: 10px;
+	border:1px solid black;
+	margin-top: 20px;
+	padding-top:15px;
+	padding-left: 25px;
+	background-color:rgba(153,95,25,0.25);
+}
+.login input{
+	margin-bottom: 15px;
+	width: 200px;
+	height: 20px;
+}
+
+#submit{
+	width: 70px;
+	height: 35px;
+	border-radius: 5px;
+	background-color: rgb(86,186,186);
+	border: 1px solid white;
+	margin-left:120px;
+	margin-top: 35px;
+}
+.compare{
+	width: 100%;
+	height: 600px;
+	background-color: rgba(222,145,25,0.25);
+	padding-top:20px;
+}
+.compare input{
+	margin-left: 600px;
+	margin-top: 30px;
+}
+.picture{
+	width: 500px;
+	height: 500px;
+	border: 2px dashed black;
+	margin-top: 15px;
+}
+
+.input-group-lg{
+	padding-left:5px;
+	margin-top: 10px;
+	width: 260px;
+	height: 25px;
+	border-radius: 5px;
+	border:1px solid black;
+	background-color: #ddd;
+}
+.input-group-addon{
+	width: 20px;
+	height: 30px;
+	border-right: 1px solid black;
+	padding-right: 5px;
+}

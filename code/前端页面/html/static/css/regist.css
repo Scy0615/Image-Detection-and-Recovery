@@ -1,0 +1,50 @@
+.regist{
+	width:400px ;
+	height: 300px;
+	border: 1px solid #2890fa;
+   	background: rgba(40, 144, 250, 0.2);
+	border-radius: 5px;
+	margin-top: 100px;
+   	padding-top:15px;
+}
+.title{
+	height: 50px;
+	width: 400px;
+	font-weight: bolder;
+	font-size: 32px;
+	text-align: center;
+	color: #fff;
+	border-bottom: 1px solid #2890fa;
+}
+.input-group-addon{
+	width: 400px;
+	height: 50px;
+	border-radius: 5px;
+	background-color: #ddd;
+	border:1px solid #2890fa ;
+}
+#input-group-lg{
+	width: 80px;
+	height: 33px;
+	font-size: 20px;
+	border:1px solid #2890fa ;
+	margin-right: 5px;
+	margin-left: 8px;
+}
+.input-group-lg2{
+	width: 80px;
+	height: 33px;
+	font-size: 20px;
+	border:1px solid #2890fa ;
+	margin-right: 13px;
+	margin-left: 14px;
+}
+.form-control{
+	margin-top: 7px;
+	margin-left: 5px;
+	width: 300px;
+	height: 35px;
+	border-radius: 5px;
+	font-size: 17px;
+	line-height: 33px;
+}

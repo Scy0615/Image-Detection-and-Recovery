@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html</title>
+	<link rel="stylesheet" href="../static/css/style.css" type="text/css">
+</head>
+<body>
+	<div class="body">
+		<div class="nav">
+			<img src="../static/image/label.png"/>
+			<button>注册</button>
+			<button>登录</button>
+			<a>首页</a>
+		</div>
+		<div class="compare">
+			<form>
+				<div class="picture" id="uploadImg">
+				<img src="" id="show" >
+			</div>
+			<input type="file" name="pic" accept="image/*" id="file" value="" multiple class="filepath" onchange="changepic(this)"/>
+			<button>对比</button>
+			</form>
+			
+		</div>
+	</div>
+</body>
+</html>
+<script>
+		
+		function changepic() {
+        var reads= new FileReader();
+        f=document.getElementById('file').files[0];
+        reads.readAsDataURL(f);
+        reads.onload=function (e) {
+            document.getElementById('show').src=this.result;
+        };
+    }
+	</script>

@@ -1,0 +1,51 @@
+<!-- templates/regist.html -->
+
+<DOCTYPE html>
+<html lang="zh-han">
+<head>
+    <title>注册</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/regist.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <img src="../static/image/label.png"/>
+            <button class="btn2" ><a href="{{ url_for('regist') }}">注册</a></button>
+            <button class="btn"><a href="{{ url_for('login') }}">登录</a></button>
+            <a class="index" href="{{ url_for('home') }}">首页</a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="regist">
+            <form method="post" action='/regist'>
+                <div class="title">
+                    <p>注册</p>
+                </div>
+                <div class="input-group-addon">
+                    <span class="input-group-lg2" id="">邮&nbsp;箱</span>
+                    <input type="email" class="form-control" placeholder="请输入邮箱" aria-describedby="sizing-addon1" name="email" value="">
+                </div>
+                <div class="input-group-addon">
+                    <span class="" id="input-group-lg">用户名</span>
+                    <input type="text" class="form-control" placeholder="请输入用户名" aria-describedby="sizing-addon1" name="username" value="">
+                </div>
+                <div class="input-group-addon">
+                    <span class="input-group-lg2" id="">密&nbsp;码</span>
+                    <input type="password" class="form-control" placeholder="请输入密码" aria-describedby="sizing-addon1" name="password1" value="">
+                </div>
+                <div class="input-group-addon">
+                    <span class="input-group-lg2" id="">密&nbsp;码</span>
+                    <input type="password" class="form-control" placeholder="请再起确认密码" aria-describedby="sizing-addon1" name="password2" value="">
+                </div>
+                <input type="submit" value="注册">
+            </form>
+            {% if error %}
+                <p>{{error}}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
